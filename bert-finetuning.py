@@ -17,7 +17,7 @@ tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 
 #Defining the Tokenize function
 def tokenize_function(examples):
-  return tokenizer(examples["text"], padding= max_length, truncation=True)
+  return tokenizer(examples["text"], padding= "max_length", truncation=True)
 
 #Mapping the Tokenized dataset
 tokenized_datasets = dataset.map(tokenize_function, batched=True)
