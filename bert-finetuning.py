@@ -1,4 +1,4 @@
-#!pip3 install transformers datasets numpy pandas evaluate
+#!pip3 install transformers datasets numpy pandas evaluate accelerate scikit-learn
 from transformers import AutoTokenizer
 from datasets import load_dataset
 from transformers import AutoModelForSequenceClassification , TrainingArguments , Trainer
